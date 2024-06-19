@@ -7,5 +7,5 @@
 <script setup>
 import { ref } from 'vue'
 
-const iframeSrc = ref('http://localhost:5174/')
+const iframeSrc = ref(import.meta.env.VITE_WIDGET_URL)
 </script>
