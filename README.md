@@ -24,7 +24,7 @@ Follow these steps to run the project locally:
 - Development Mode: `npm run dev`
 - Building: `npm run build`
 
-### other useful scripts
+### Other Useful Scripts
 
 - `npm run preview` to run build preview
 
