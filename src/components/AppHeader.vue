@@ -20,7 +20,7 @@ import { useRoute } from 'vue-router'
 
 const menuItems = [
   { title: 'Home', link: '/' },
-  { title: 'About', link: '/about' },
+  // { title: 'About', link: '/about' },
   { title: 'MapHeighLightStatic', link: '/mapStatic' },
   { title: 'MapHeighLightClick', link: '/mapClick' },
   { title: 'LineChart', link: '/lineChart' },
