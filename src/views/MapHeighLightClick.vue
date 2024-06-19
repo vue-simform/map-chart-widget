@@ -1,5 +1,19 @@
 <template>
-  <div id="map" ref="mapContainer" style="height: 80vh"></div>
+  <div class="map-page">
+    <div class="head-container">
+      <ul>
+        <li>Here is the interactive map of Canada.</li>
+        <li>Hover over any area to explore.</li>
+        <li>
+          Click on a region to be redirected to a new page with detailed information about that
+          area.
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div id="map" ref="mapContainer" style="height: 60vh; margin: 3% 20%"></div>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -16,10 +30,8 @@ const router = useRouter() // Initialize the router
 
 const initializeMap = () => {
   try {
-    console.log('Initializing map...')
     // Set the initial view to Edmonton, Canada
     map = L.map(mapContainer.value).setView([53.5461, -113.4938], 3)
-    console.log('Map initialized')
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution:
@@ -58,7 +70,6 @@ const initializeMap = () => {
         })
       }
     }).addTo(map)
-    console.log('GeoJSON layer added')
   } catch (error) {
     console.error('Error initializing map:', error)
   }
@@ -72,5 +83,13 @@ onMounted(() => {
 <style scoped>
 #map {
   height: 100%;
+}
+.map-page {
+  display: flex;
+  flex-direction: column;
+}
+.head-container {
+  margin: 2% 5% 0;
+  font-size: 24px;
 }
 </style>

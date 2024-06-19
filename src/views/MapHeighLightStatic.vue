@@ -14,16 +14,13 @@ let selectedLayer = null
 
 const initializeMap = () => {
   try {
-    console.log('Initializing map...')
     // Set the initial view to Edmonton, Canada
     map = L.map(mapContainer.value).setView([53.5461, -113.4938], 10)
-    console.log('Map initialized')
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution:
         '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map)
-    console.log('Tile layer added')
 
     // Sample GeoJSON data
     const geojsonData = {
@@ -84,7 +81,6 @@ const initializeMap = () => {
       style: defaultStyle,
       onEachFeature: onEachFeature
     }).addTo(map)
-    console.log('GeoJSON layer added')
   } catch (error) {
     console.error('Error initializing map:', error)
   }
@@ -100,7 +96,6 @@ const defaultStyle = {
 const highlightFeature = (e) => {
   try {
     const layer = e.target
-    console.log('Layer clicked:', layer.feature.properties.name)
 
     layer.setStyle({
       weight: 5,
@@ -135,7 +130,6 @@ const resetHighlight = () => {
 
 const onEachFeature = (feature, layer) => {
   try {
-    console.log('Attaching event to layer:', feature.properties.name)
     layer.on({
       click: highlightFeature
     })

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div style="display: flex; justify-content: space-around">
+    <div class="chart-container">
       <div>
         <apexchart width="500" type="line" :options="options" :series="series"></apexchart>
         <apexchart width="500" type="bar" :options="options" :series="series"></apexchart>
@@ -34,3 +34,11 @@ const series = ref([
 
 onMounted(() => {})
 </script>
+
+<style scoped>
+.chart-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+}
+</style>

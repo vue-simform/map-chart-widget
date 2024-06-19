@@ -1,8 +1,14 @@
 <template>
-  <div>
-    <h1>{{ province }}</h1>
-    <!-- Display province details here -->
-    <div id="map" ref="mapContainer" style="height: 80vh; width: 100%"></div>
+  <div class="map-page">
+    <div class="head-container">
+      <h1>{{ province }}</h1>
+      Description: Northern Sunrise County is a municipal district in northern Alberta, Canada.
+      Located in Census Division 17, its municipal office is located east of the Town of Peace River
+      at the intersection of Highway 2 and Highway 688.
+    </div>
+    <div>
+      <div id="map" ref="mapContainer" style="height: 60vh; margin: 3% 20%"></div>
+    </div>
   </div>
 </template>
 
@@ -55,6 +61,13 @@ onMounted(() => {
 <style scoped>
 #map {
   height: 100vh;
-  width: 100%;
+}
+.head-container {
+  margin: 2% 5% 0;
+  font-size: 24px;
+}
+.map-page {
+  display: flex;
+  flex-direction: column;
 }
 </style>
