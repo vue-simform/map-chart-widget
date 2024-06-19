@@ -1,35 +1,45 @@
-# vue-map-chart
+# 🚀 Map-Chart-Widget-Vue3
 
-This template should help get you started developing with Vue 3 in Vite.
+This repository contains a demo project showcasing the usage of Vue 3 Composition API. It includes examples of integrating a map, chart, and widget using popular libraries.
 
-## Recommended IDE Setup
+## Getting Started:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Follow these steps to run the project locally:
 
-## Customize configuration
+### Project Setup
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+`Clone Repo` Clone repo using HTTP or SSH method.
 
-## Project Setup
+### Step 1: 🚀 Initial Setup
 
-```sh
-npm install
-```
+- `npm install` to install node modules
 
-### Compile and Hot-Reload for Development
+### Step 2: ⚙️ Environment Configuration
 
-```sh
-npm run dev
-```
+- Create `.env`: Copy `.env.template` to `.env`
+- Update `.env`: Fill in necessary environment variables
 
-### Compile and Minify for Production
+### Step 3: 🏃‍♂️ Running the Project
 
-```sh
-npm run build
-```
+- Development Mode: `npm run dev`
+- Building: `npm run build`
 
-### Lint with [ESLint](https://eslint.org/)
+### other useful scripts
 
-```sh
-npm run lint
-```
+- `npm run preview` to run build preview
+
+## Technologies Used:
+
+- Vue 3 (Composition API)
+- Leaflet.js for the map component (https://leafletjs.com/)
+- ApexCharts for the chart component (https://apexcharts.com/docs/vue-charts/)
+
+## Tech Stack
+
+**Client:** [TypeScript Vue Plugin](Volar), [Typescript](https://www.typescriptlang.org), [Vite](https://vitejs.dev/)
+
+**Code Formatter** [Eslint](https://eslint.org/) + [prettier](https://prettier.io/)
+
+## Author
+
+- Moksha Shah (moksha@simformsolutions.com)
