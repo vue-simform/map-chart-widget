@@ -22,7 +22,12 @@ const menuItems = [
   { title: 'Home', link: '/' },
   { title: 'About', link: '/about' },
   { title: 'MapHeighLightStatic', link: '/mapStatic' },
-  { title: 'MapHeighLightClick', link: '/mapClick' }
+  { title: 'MapHeighLightClick', link: '/mapClick' },
+  { title: 'LineChart', link: '/lineChart' },
+  {
+    title: 'WidgetChart',
+    link: '/widgetChart'
+  }
 ]
 
 const currentRoute = useRoute()

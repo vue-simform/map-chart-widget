@@ -3,6 +3,8 @@ import HomeView from '../views/HomeView.vue'
 import MapHeighLightStatic from '../views/MapHeighLightStatic.vue'
 import MapHeighLightClick from '../views/MapHeighLightClick.vue'
 import ProvinceDetails from '../views/ProvinceDetails.vue'
+import LineChart from '../views/LineChart.vue'
+import WidgetChart from '../views/WidgetChart.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,6 +36,16 @@ const router = createRouter({
       path: '/province/:province',
       name: 'province-details',
       component: ProvinceDetails
+    },
+    {
+      path: '/lineChart',
+      name: 'LineChart',
+      component: LineChart
+    },
+    {
+      path: '/widgetChart',
+      name: 'WidgetChart',
+      component: WidgetChart
     }
   ]
 })
