@@ -23,10 +23,14 @@ const menuItems = [
   // { title: 'About', link: '/about' },
   { title: 'MapHeighLightStatic', link: '/mapStatic' },
   { title: 'MapHeighLightClick', link: '/mapClick' },
-  { title: 'LineChart', link: '/lineChart' },
+  { title: 'Chart', link: '/lineChart' },
   {
     title: 'WidgetChart',
     link: '/widgetChart'
+  },
+  {
+    title: 'ChartApplication',
+    link: '/chartApplication'
   }
 ]
 
@@ -42,6 +46,9 @@ const currentItem = ref(currentRoute.name || '')
   padding: 1rem;
   background-color: #333;
   color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* .logo {

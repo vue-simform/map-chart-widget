@@ -1,11 +1,20 @@
 <template>
-  <div>
+  <div style="padding-top: 5%">
     <div class="chart-container">
       <div>
-        <apexchart width="500" type="line" :options="options" :series="series"></apexchart>
-        <apexchart width="500" type="bar" :options="options" :series="series"></apexchart>
+        <div>
+          <div class="chart-title">Line Chart</div>
+          <apexchart width="500" type="line" :options="options" :series="series"></apexchart>
+        </div>
+        <div>
+          <div class="chart-title">Bar Chart</div>
+
+          <apexchart width="500" type="bar" :options="options" :series="series"></apexchart>
+        </div>
       </div>
       <div>
+        <div class="chart-title">Donut Chart</div>
+
         <apexchart width="500" type="donut" :options="optionsD" :series="seriesD"></apexchart>
       </div>
     </div>
@@ -40,5 +49,11 @@ onMounted(() => {})
   display: flex;
   justify-content: space-around;
   margin: 5%;
+}
+
+.chart-title {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
 }
 </style>

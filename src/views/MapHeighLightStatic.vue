@@ -1,5 +1,7 @@
 <template>
-  <div id="map" ref="mapContainer" style="height: 80vh"></div>
+  <div style="padding-top: 5%">
+    <div id="map" ref="mapContainer" style="height: 80vh"></div>
+  </div>
 </template>
 
 <script setup>

@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div style="padding-top: 5%">
+    <h2>Using this with iframe</h2>
     <iframe :src="iframeSrc" width="100%" height="600px" frameborder="0"></iframe>
   </div>
 </template>

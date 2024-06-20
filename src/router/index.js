@@ -5,6 +5,7 @@ import MapHeighLightClick from '../views/MapHeighLightClick.vue'
 import ProvinceDetails from '../views/ProvinceDetails.vue'
 import LineChart from '../views/LineChart.vue'
 import WidgetChart from '../views/WidgetChart.vue'
+import ChartApplication from '../views/ChartApplication.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -46,6 +47,11 @@ const router = createRouter({
       path: '/widgetChart',
       name: 'WidgetChart',
       component: WidgetChart
+    },
+    {
+      path: '/chartApplication',
+      name: 'ChartApplication',
+      component: ChartApplication
     }
   ]
 })

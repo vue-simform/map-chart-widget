@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div>
+  <div style="padding-top: 5%">
     <h1>Welcome</h1>
     <h2>
       This demo showcasing the usage of map, chart, and widget in Vue 3. It includes examples of

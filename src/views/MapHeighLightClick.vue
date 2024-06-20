@@ -87,6 +87,7 @@ onMounted(() => {
 .map-page {
   display: flex;
   flex-direction: column;
+  padding-top: 3%;
 }
 .head-container {
   margin: 2% 5% 0;
