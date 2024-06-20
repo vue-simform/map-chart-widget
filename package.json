@@ -13,12 +13,12 @@
   "dependencies": {
     "@vue/web-component-wrapper": "^1.3.0",
     "apexcharts": "^3.49.1",
+    "chart-widget": "file:chart-widget-0.0.0.tgz",
     "leaflet": "^1.9.4",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
     "vue3-apexcharts": "^1.5.3",
-    "widget-chart-spa": "file:widget-chart-spa-0.0.0.tgz"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",

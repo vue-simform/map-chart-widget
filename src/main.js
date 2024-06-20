@@ -3,7 +3,7 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import VueApexCharts from 'vue3-apexcharts'
-import MyWidget from 'widget-chart-spa'
+import MyWidget from 'chart-widget'
 
 import App from './App.vue'
 import router from './router'
