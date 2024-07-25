@@ -6,8 +6,11 @@
           v-for="(item, index) in menuItems"
           :key="index"
           :class="{ active: currentItem === item.title }"
+          class="pointer-cursor"
+          @click="gotoPage(item.link)"
         >
-          <router-link :to="item.link">{{ item.title }}</router-link>
+          <!-- <router-link :to="item.link">{{ item.title }}</router-link> -->
+          {{ item.title }}
         </li>
       </ul>
     </nav>
@@ -17,10 +20,14 @@
 <script setup>
 import { ref } from 'vue'
 import { useRoute } from 'vue-router'
+import { useRouter } from 'vue-router' // Import useRouter from vue-router
 
+const router = useRouter()
+const gotoPage = (path) => {
+  router.push(path)
+}
 const menuItems = [
   { title: 'Home', link: '/' },
-  // { title: 'About', link: '/about' },
   { title: 'MapHeighLightStatic', link: '/mapStatic' },
   { title: 'MapHeighLightClick', link: '/mapClick' },
   { title: 'Chart', link: '/lineChart' },
@@ -39,6 +46,10 @@ const currentItem = ref(currentRoute.name || '')
 </script>
 
 <style scoped>
+.pointer-cursor {
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

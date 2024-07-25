@@ -28,6 +28,10 @@ Follow these steps to run the project locally:
 
 - `npm run preview` to run build preview
 
+### Other Details
+
+- To check iFrame functionality, clone the chart-widget repository (https://github.com/vue-simform/chart-widget) and ensure it is running on port 5174.
+
 ## Technologies Used:
 
 - Vue 3 (Composition API)
